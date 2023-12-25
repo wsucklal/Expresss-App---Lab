@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doodlebob</title>
+</head>
+<body>
+    <!--  lOGIN page -->
+    <div style="display: flex; flex-direction: column; align-items: center; min-height:100vh; min-width: 100vw;">
+        <div style="display: flex; flex-direction: column; justify-content:center; align-items:center;">
+
+            <h1 class="h3 mb-3 font-weight-normal">Login to Doodlebob</h1>
+
+        </div>
+        <div style="display:flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px;">
+            <div><h3>Admin Login</h3></div>
+
+            <form action="/admin" method="post" style="display: flex; flex-direction: column">
+                <input type="email" name="adminUsr" placeholder="Email" style="text-align:center" required/><br>
+                <input type="password" name="adminPass" placeholder="Password" style="text-align:center" required/><br>
+                <button type="submit">Login</button>
+            </form></br>
+
+
+
+            <div>
+                <button
+                type="submit"
+                onclick="window.location.href='/guest';"
+                
+              >Visit as Guest</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
